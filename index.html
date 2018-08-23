@@ -14,8 +14,8 @@
   <header>
     <div class="headerText">
       <div class ="divider"></div>
-        <h1>KTH</h1>
-        <p>Lecture statistics</p>
+        <h1>KYH</h1>
+        <p>Weather report</p>
       <div class ="divider"></div>
   </header>
 
@@ -24,28 +24,16 @@
       <img src= "images/buttons.png" alt="buttons">
     </div>
     <div class ="aboutText">
-      <h2>About the statistics</h2>
-      <p>This is where we let you now about this project, how the idea started, where the statistic´s collected from and so on.</p>
-      <p>Maybe some additional text to.</p>
+    <h2> Monitor the perceived weather in our classrooms.</h2>
     </div>
   </article>
 
-<div class = "piechartstatistics-wrapper">
-  <h2>Yesterday</h2>
-  <div class= "piechart-wrapper">
-    <div class="piechart">
-        <canvas id="myCanvas" width="200" height="200" style="border:none">
-        </canvas>
-        <h3>AM</h3>
-    </div>
-    <div class ="piechart">
-        <canvas id="myCanvas2" width="200" height="200" style="border:none">
-        </canvas>
-        <h3>PM</h3>
-    </div>
-    <div class = "color-wrapper">
+ 
+  <h2>Weather report</h2>
+  <div class = "piechartstatistics-wrapper">
+     <div class = "color-wrapper">
        <div class = "colorchart">
-       <div class ="white-wrapper">
+         <div class ="white-wrapper">
            <div class ="white">
           </div> 
           <p> = </p>
@@ -71,8 +59,43 @@
         </div>
       </div>
     </div>
+  <div class="today-wrapper">
+  <p>Today</p>
+  <div class= "piechart-wrapper">
+    <div class="piechart">
+        <canvas id="myCanvas3" width="150" height="150" style="border:none">
+        </canvas>
+        <h4>AM</h4>
+         <p>53 pressed buttons</p>
+    </div>
+    <div class ="piechart">
+        <canvas id="myCanvas4" width="150" height="150" style="border:none">
+        </canvas>
+        <h4>PM</h4>
+         <p>112 pressed buttons</p>
+    </div>
+    </div>
+    </div>
+  
+   <div class="yesterday-wrapper">
+  <p>Yesterday</p>
+  <div class= "piechart-wrapper">
+    <div class="piechart">
+        <canvas id="myCanvas" width="150" height="150" style="border:none">
+        </canvas>
+        <h4>AM</h4>
+         <p>93 pressed buttons</p>
+    </div>
+    <div class ="piechart">
+        <canvas id="myCanvas2" width="150" height="150" style="border:none">
+        </canvas>
+        <h4>PM</h4>
+         <p>108 pressed buttons</p>
+    </div>
 </div>
 </div>
+</div>
+
 
 <div class = "barchart-wrapper">
   <h2>Lectures past 7 days.</h2>
