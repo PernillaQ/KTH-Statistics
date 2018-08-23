@@ -89,6 +89,23 @@ let my2PieChart = new Piechart(
     }
 );
 my2PieChart.draw();
+let my3Piechart = new Piechart(
+    {
+        canvas:myCanvas3,
+        data:colorChart1,
+        colors:["#f4f4f4","#00c160", "#c51f33","#126ccc"]
+    }
+);
+
+my3Piechart.draw();
+let my4PieChart = new Piechart(
+    {
+        canvas:myCanvas4,
+        data:myData, 
+        colors:["#f4f4f4","#00c160", "#c51f33","#126ccc"] 
+    }
+);
+my4PieChart.draw();
 
 
 
