@@ -62,21 +62,22 @@ header
     justify-content: center;
     text-align: center;
     letter-spacing: 0.2em;
-    margin: 0em 0 4em 0;
+    margin: 0em 0 2em 0;
     padding-top: 1em;
 }
-header p
+header p, .today-wrapper p:nth-child(1), .yesterday-wrapper p:nth-child(1)
 {
     font-family: "Pacifico", sans-serif;
     color:#ead6c0;
     margin-top: 0;
+    letter-spacing: 0.1em;
 }
 .headerImg-wrapper img
 {
-    width: 12em;
+    width: 14em;
     height: auto;
-    position: absolute;
-    margin-left: 6em;
+   /* position: absolute;
+    margin-left: 6em;*/
 }
 .headerText
 {
@@ -90,16 +91,16 @@ header p
   	display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     padding-bottom: 4em;
-    padding-top: 2em;
 }
 .piechart-wrapper
 {
-    width: 70%;
+    width: 100%;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+    margin-top: 2em;
 }
 .piechart
 {
@@ -107,10 +108,25 @@ header p
     align-items: center;
     flex-direction: column;
 }
+.today-wrapper, .yesterday-wrapper
+{
+    width: 35%;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today-wrapper h2, .yesterday-wrapper h2
+{
+    margin-bottom: 3em;
+}
 .color-wrapper
 {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    position: absolute;*/
 }
 .color-wrapper2
 { 
@@ -118,10 +134,10 @@ header p
 }
 .colorchart
 {
-    width: 200px;
+     width: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
 }
 .colorchart2
 {
@@ -180,14 +196,18 @@ header p
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
 }
 .aboutText
 {
-    margin: 4em;
+    margin: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.aboutText h2
+{
+    margin-top: 3em;
 }
 .barchart-wrapper
 {
