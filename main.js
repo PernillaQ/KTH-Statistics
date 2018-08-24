@@ -29,11 +29,23 @@ let colorChart1 = {
     "color3": 2,
     "color4": 20
 };
-let myData = {
+let colorChart2 = {
 	"color1": 12, 
 	"color2": 30,
 	"color3": 1, 
 	"color4": 18
+};
+let colorChart3 = {
+    "color1": 20,
+    "color2": 12,
+    "color3": 3,
+    "color4": 25
+};
+let colorchart4 = {
+    "color1": 16,
+    "color2": 35,
+    "color3": 1,
+    "color4": 12
 };
 
 let Piechart = function(options){
@@ -84,7 +96,7 @@ myPiechart.draw();
 let my2PieChart = new Piechart(
     {
 		canvas:myCanvas2,
-	    data:myData, 
+	    data:colorChart2, 
 	    colors:["#f4f4f4","#00c160", "#c51f33","#126ccc"] 
     }
 );
@@ -92,7 +104,7 @@ my2PieChart.draw();
 let my3Piechart = new Piechart(
     {
         canvas:myCanvas3,
-        data:colorChart1,
+        data:colorChart3,
         colors:["#f4f4f4","#00c160", "#c51f33","#126ccc"]
     }
 );
@@ -101,7 +113,7 @@ my3Piechart.draw();
 let my4PieChart = new Piechart(
     {
         canvas:myCanvas4,
-        data:myData, 
+        data:colorchart4, 
         colors:["#f4f4f4","#00c160", "#c51f33","#126ccc"] 
     }
 );
