@@ -1,4 +1,4 @@
-# KTH-Statistics
+# KYH-Statistics
 
 <h2>About</h2>
 
